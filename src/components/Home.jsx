@@ -1,6 +1,6 @@
 import axios from "axios";
 import NavBar from "./NavBar";
-import { useContext, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import {
   Box,
   Button,
@@ -13,14 +13,14 @@ import {
 } from "@mui/material";
 import { useNavigate } from "react-router-dom";
 import SearchBar from "./SearchBar";
-import { AuthUser } from "../AppRouter";
+// import { AuthUser } from "../AppRouter";
 const apiUrl = "https://api.themoviedb.org/3/trending/movie/day";
 const apiKey =
   "eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI3MDY5ZGI1NTNlOTQyZDZhYjA4ODBhMjMxODZmYzQyMyIsIm5iZiI6MTcxOTMwNjk4MS4xMDU0MzcsInN1YiI6IjY2N2E4NzgwNDZmZmI4YTg5ZDNiNTk3NyIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.rQZzBt-EW2HRH2KaHp33tPU0mfPDFwU7VQvpjy3KTLY";
 const language = "en-US";
 
 const Home = () => {
-  const { username } = useContext(AuthUser);
+  // const { username } = useContext(AuthUser);
   const [movies, setMovies] = useState([]);
   const navigate = useNavigate();
   const config = {
@@ -60,7 +60,7 @@ const Home = () => {
   return (
     <>
       <NavBar />
-      <Box>
+      {/* <Box>
         <Typography
           variant="h5"
           sx={{
@@ -72,7 +72,7 @@ const Home = () => {
         >
           Welcome {username}!
         </Typography>
-      </Box>
+      </Box> */}
       <Box sx={{ textAlign: "center" }}>
         <SearchBar />
       </Box>

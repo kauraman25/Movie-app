@@ -1,5 +1,5 @@
 import { Box } from "@mui/material";
-import SearchIcon from "@mui/icons-material/Search";
+// import SearchIcon from "@mui/icons-material/Search";
 import { useState } from "react";
 import axios from "axios";
 
@@ -25,8 +25,8 @@ const SearchBar = () => {
   };
 
   return (
-    <Box sx={{ position: "relative", textAlign: "center", marginTop: "20px" }}>
-      <SearchIcon sx={{ position: "absolute", left: "160px", top: "50%", transform: "translateY(-50%)" }} />
+    <Box sx={{ position: "relative", textAlign: "center", marginTop: "80px" }}>
+      {/* <SearchIcon sx={{ position: "absolute", left: "160px", top: "50%", transform: "translateY(-50%)" }} /> */}
       <input
         style={{
           border: "2px solid #ccc",

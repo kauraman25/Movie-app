@@ -19,7 +19,7 @@ function DrawerAppBar() {
   }
 
   return (
-    <Box sx={{ display: "flex", marginBottom: "35px" }}>
+    <Box sx={{ display: "flex", marginBottom: "15px" , padding: "10px" }}>
       <CssBaseline />
       <AppBar component="nav" sx={{ background: "linear-gradient(90deg, #333, #555)" }}>
         <Toolbar>

@@ -41,7 +41,7 @@ import {
       <>
         <NavBar />
         <Box>
-          <Typography variant="h5" sx={{ textAlign: "center" }}>
+          <Typography variant="h5" sx={{ textAlign: "center", marginTop: "80px" }}>
             My Watchlist
           </Typography>
         </Box>

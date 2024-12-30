@@ -39,10 +39,10 @@ const Details = () => {
   return (
     <>
       <NavBar />
-      <Box>
+      <Box sx={{marginTop: "50px"}}>
         {movie ? (
           <>
-            <h1>{movie.title}</h1>
+            <h1 style={{textAlign: "center"}}>{movie.title}</h1>
             <div>
               <img
                 src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
