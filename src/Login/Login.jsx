@@ -48,7 +48,6 @@ const Login = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     login(username, password);
-    console.log("aman");
   };
 
   return (
